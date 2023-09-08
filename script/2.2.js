@@ -56,33 +56,30 @@
 
 // ----------------
 
+let min, max, current;
+
 do {
-    if (isNaN(min) || isNaN(max)) {
-        alert('Please enter valid numbers');
-        min = parseInt(prompt('Enter the minimum number:'));
-        max = parseInt(prompt('Enter the maximum number:'));
-    }
-    else if (min > max) {
-        alert("Your 'min' value cannot be greater than 'max'");
-        min = parseInt(prompt('Enter the minimum number:'));
-        max = parseInt(prompt('Enter the maximum number:'));
-    }
+    // Ask values
+    min = parseInt(prompt('Enter the minimum number:'));
+    max = parseInt(prompt('Enter the maximum number:'));
+    // Test values
+    if (isNaN(min) || isNaN(max)) alert('Please enter valid numbers');
+    else if (min > max) alert("Your 'min' value cannot be greater than 'max'");
 } 
 while (isNaN(min) || isNaN(max) || (min > max))
 
-
 do {
-    alert('Please enter valid number');
+    // Ask value
     current = parseInt(prompt('Enter the current number:'));
+    // Test value
+    if (isNaN(current)) alert('Please enter valid number');
 }
 while (isNaN(current))
-
 
 let text = 
     (current >= min && current <= max) ? 
     'Number is between min and max' : 
     'Number is NOT between min and max';
-
 
 alert(text);
 
