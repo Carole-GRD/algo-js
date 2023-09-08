@@ -1,3 +1,3 @@
-let firstname = 'Carole';
+let myName = 'Carole';
 
-console.log(`My name is : ${firstname}`);
+console.log(`My name is : ${myName}`);
