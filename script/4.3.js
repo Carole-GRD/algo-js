@@ -32,6 +32,6 @@ let multiRand = (n) => {
 }
 
 
-let elements = parseInt(prompt('Combien de nombres dans le tableau ?'));
-alert(multiRand(elements));
-// console.log(multiRand(elements));
+let howManyNumbers = parseInt(prompt('Combien de nombres dans le tableau ?'));
+alert(multiRand(howManyNumbers));
+// console.log(multiRand(howManyNumbers));
