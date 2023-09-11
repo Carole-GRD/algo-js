@@ -23,8 +23,11 @@
  * @returns {number} The Euclidean distance between points A and B.
  */
 let calcDistance = (coordA, coordB) => {
+    // Calculate the Euclidean distance using the Pythagorean theorem.
     // let result = Math.sqrt( ((coordB[0] - coordA[0]) ** 2) + ((coordB[1] - coordA[1]) ** 2) );
-    let result = Math.sqrt( Math.pow( (coordB[0] - coordA[0]), 2) + Math.pow( (coordB[1] -coordA[1]), 2) );
+    let result = Math.sqrt( Math.pow( (coordB[0] - coordA[0]), 2) + Math.pow( (coordB[1] - coordA[1]), 2) );
+
+    // Round the result to two decimal places for display.
     let display = Math.floor(result * 100) / 100;
     return display;
 }
