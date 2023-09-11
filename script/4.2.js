@@ -11,6 +11,16 @@
  * Génère un nombre entier aléatoire entre 1 et 10 inclus.
  * @returns {number} Un nombre entier aléatoire entre 1 et 10 inclus.
  */
+// let rand10 = () => Math.ceil(Math.random() * 10);
+
+// console.log(rand10());
+
+// ---------------------------------------------------------
+
+/**
+ * Generates a random integer between 1 and 10 (inclusive).
+ * @returns {number} A random integer between 1 and 10 (inclusive).
+ */
 let rand10 = () => Math.ceil(Math.random() * 10);
 
 console.log(rand10());
