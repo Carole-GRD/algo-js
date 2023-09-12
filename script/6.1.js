@@ -18,6 +18,9 @@ class Circle {
     get surface() {
         return  Math.round(Math.PI * Math.pow(this.radius, 2) * 100) / 100;
     }
+    set surface(val) {
+        this.radius = val;
+    }
 }
 
 let circle1 = new Circle(5, 6, 10);
@@ -32,3 +35,7 @@ console.log(circle1.position);   // (12, 4)
 circle1.radius = 1;
 console.log(circle1.radius);     // 1
 console.log(circle1.surface);    // 3.14
+
+circle1.surface = 2;
+console.log(circle1.radius);     // 2
+console.log(circle1.surface);    // 12.57
